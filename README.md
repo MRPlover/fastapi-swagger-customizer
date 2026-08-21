@@ -30,7 +30,8 @@ from fastapi_swagger_customizer import setup_custom_swagger
 
 app = FastAPI(
     title="My Awesome API",
-    version="1.0.0"
+    version="1.0.0",
+    docs_url=None
 )
 
 # Подключаем кастомный Swagger UI одной командой!
@@ -41,7 +42,7 @@ def read_items():
     return {"message": "Hello World"}
 ```
 
-Теперь запустите ваше приложение и перейдите по адресу `http://127.0.0`. Вы увидите обновленный Swagger с вашими стилями и плагинами!
+Теперь запустите ваше приложение и перейдите по адресу `localhost/docs`. Вы увидите обновленный Swagger со стилями и плагинами!
 
 ## 🛠️ Что внутри?
 
