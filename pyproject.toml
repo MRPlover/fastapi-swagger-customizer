@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fastapi-swagger-customizer"
-version = "0.1.0"
+version = "0.1.1"
 description = "One-command custom Swagger UI for FastAPI"
 readme = "README.md"
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "MRPlover", email = "plovermr@gmail.com"}
 ]
 license = {text = "MIT"}
 requires-python = ">=3.8"
@@ -27,6 +27,7 @@ classifiers = [
 
 dependencies = [
     "fastapi>=0.100.0",
+    "jinja2>=3.0.0",
 ]
 
 [project.optional-dependencies]
@@ -43,9 +44,9 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/fastapi-swagger-customizer"
-Repository = "https://github.com/yourusername/fastapi-swagger-customizer"
-Documentation = "https://github.com/yourusername/fastapi-swagger-customizer#readme"
+Homepage = "https://github.com/MRPlover/fastapi-swagger-customizer"
+Repository = "https://github.com/MRPlover/fastapi-swagger-customizer"
+Documentation = "https://github.com/MRPlover/fastapi-swagger-customizer#readme"
 
 [tool.setuptools.packages.find]
 where = ["src"]
