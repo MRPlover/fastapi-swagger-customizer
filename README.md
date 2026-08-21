@@ -52,8 +52,8 @@ def read_items():
 
 ## 🤝 Ссылки и разработка
 
-* **Исходный код:** [GitHub Repository](https://github.com)
-* **Сообщить об ошибке:** [GitHub Issues](https://github.com/issues)
+* **Исходный код:** [GitHub Repository](https://github.com/MRPlover/fastapi-swagger-customizer)
+* **Сообщить об ошибке:** [GitHub Issues](https://github.com/MRPlover/fastapi-swagger-customizer/issues)
 
 ## 📄 Лицензия
 
