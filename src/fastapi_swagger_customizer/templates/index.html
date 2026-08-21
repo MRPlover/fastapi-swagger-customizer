@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>API Documentation</title>
+    <link rel="stylesheet" href="/swagger/static/css/swagger-ui.css">
+    <link rel="stylesheet" href="/swagger/static/css/add.css">
+</head>
+<body>
+    <div id="swagger-ui"></div>
+    <script src="/swagger/static/js/swagger-ui-bundle.js"></script>
+    <script src="/swagger/static/js/plugins/swagger-group.js"></script>
+    <script src="/swagger/static/js/plugins/swagger-colors-config.js"></script>
+    <script src="/swagger/static/js/plugins/swagger-color.js"></script>
+    <script>
+    window.onload = function() {
+        const ui = SwaggerUIBundle({
+            url: "/openapi.json",
+            dom_id: "#swagger-ui",
+            deepLinking: true,
+            presets: [
+                SwaggerUIBundle.presets.apis,
+                SwaggerUIBundle.SwaggerUIStandalonePreset
+            ],
+            layout: "BaseLayout",
+            docExpansion: "list",
+            filter: true
+        });
+        window.ui = ui;
+    };
+    </script>
+</body>
+</html>

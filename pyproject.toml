@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastapi-swagger-customizer"
+version = "0.1.0"
+description = "One-command custom Swagger UI for FastAPI"
+readme = "README.md"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.8"
+
+# ПРАВИЛЬНО: classifiers на уровне project (до dependencies)
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: FastAPI",
+]
+
+dependencies = [
+    "fastapi>=0.100.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "ruff>=0.0.270",
+    "mypy>=1.0.0",
+]
+docs = [
+    "mkdocs>=1.4.0",
+    "mkdocs-material>=9.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/fastapi-swagger-customizer"
+Repository = "https://github.com/yourusername/fastapi-swagger-customizer"
+Documentation = "https://github.com/yourusername/fastapi-swagger-customizer#readme"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["fastapi_swagger_customizer*"]
+
+[tool.setuptools.package-data]
+fastapi_swagger_customizer = [
+    "templates/*.html",
+    "templates/static/**/*",
+    "templates/static/css/*.css",
+    "templates/static/js/*.js",
+    "templates/static/js/plugins/*.js",
+    "templates/static/images/*",
+]
+
+[tool.setuptools]
+include-package-data = true

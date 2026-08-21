@@ -1,0 +1,23 @@
+# Виртуальное окружение
+.venv/
+venv/
+env/
+ENV/
+
+# Кэш Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Файлы сборки библиотеки (их НЕЛЬЗЯ пушить на GitHub)
+build/
+dist/
+*.egg-info/
+
+# Файлы настроек редакторов кода
+.vscode/
+.idea/
+*.swp

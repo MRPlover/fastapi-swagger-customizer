@@ -1,0 +1,12 @@
+/* Отступ для всех вложенных секций */
+.opblock-tag-section[data-prefix] .opblock-tag-section {
+    margin-left: 30px !important;
+    padding-left: 5px !important;
+}
+
+/* Убираем лишние отступы у содержимого внутри вложенных секций */
+.opblock-tag-section[data-prefix] .opblock-tag-section .no-margin {
+    margin-left: 0 !important;
+    border-left: none !important;
+    padding-left: 0 !important;
+}

@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+recursive-include src/fastapi_swagger_customizer/templates *.html
+recursive-include src/fastapi_swagger_customizer/templates/static *
+recursive-include src/fastapi_swagger_customizer/templates/static/css *.css
+recursive-include src/fastapi_swagger_customizer/templates/static/js *.js
+recursive-include src/fastapi_swagger_customizer/templates/static/js/plugins *.js
+recursive-include src/fastapi_swagger_customizer/templates/static/images *
