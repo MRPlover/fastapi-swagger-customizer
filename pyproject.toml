@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fastapi-swagger-customizer"
-version = "0.1.1"
+version = "0.1.2"
 description = "One-command custom Swagger UI for FastAPI"
 readme = "README.md"
 authors = [
