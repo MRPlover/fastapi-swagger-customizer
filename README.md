@@ -15,16 +15,15 @@
 
 Установите пакет с помощью pip: 
 
-bash
-
+```bash
 pip install fastapi-swagger-customizer
+```
 
 ### 🚀 Быстрый старт
 
 Просто импортируйте функцию setup_custom_swagger и передайте в неё ваше FastAPI приложение. 
 
-python
-
+```python
 from fastapi import FastAPI
 from fastapi_swagger_customizer import setup_custom_swagger
 
@@ -40,6 +39,8 @@ setup_custom_swagger(app)
 @app.get("/items")
 def read_items():
     return {"message": "Hello World"}
+```
+
 
 Теперь запустите ваше приложение и перейдите по адресу localhost/docs. Вы увидите обновленный Swagger со стилями и плагинами! 
 
@@ -47,8 +48,7 @@ def read_items():
 
 Вы можете гибко управлять элементами интерфейса, передавая дополнительные параметры в setup_custom_swagger: 
 
-python
-
+```python
 setup_custom_swagger(
     app,
     static_url="/swagger/static",  # Кастомный путь для статических файлов
@@ -56,6 +56,7 @@ setup_custom_swagger(
     include_colors=True,           # Оставить кастомную палитру цветов
     theme="dark"                   # Выбрать тему оформления ('dark', 'light' и др.)
 )
+```
 
 ### 🛠️ Что внутри и как настроить?
 
