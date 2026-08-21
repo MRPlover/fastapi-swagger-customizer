@@ -1,7 +1,7 @@
 # FastAPI Swagger Customizer 🎨
 
-[![PyPI version](https://shields.io)](https://pypi.org)
-[![License: MIT](https://shields.io)](https://opensource.org)
+[![PyPI version](https://img.shields.io/pypi/v/fastapi-swagger-customizer.svg)](https://pypi.org/project/fastapi-swagger-customizer/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Кастомизируйте стандартный Swagger UI в вашем FastAPI приложении **одной строчкой кода**. Библиотека позволяет подключить собственную тему оформления, плагины для группировки эндпоинтов и кастомные цветовые схемы без сложной настройки статики.
 
